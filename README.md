@@ -15,3 +15,11 @@ cd build
 cmake -D32BLIT_DIR=/path/to/32blit-sdk/ ..
 make
 ```
+
+For PicoSystem build:
+```
+mkdir build.pico
+cd build.pico
+cmake -D32BLIT_DIR=/path/to/32blit-sdk -DCMAKE_TOOLCHAIN_FILE=/path/to/32blit-sdk/pico.toolchain -DPICO_BOARD=pimoroni_picosystem
+make
+```
