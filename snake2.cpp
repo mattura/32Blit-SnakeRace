@@ -10,8 +10,15 @@ Surface* sr_title = nullptr;
 #define MAX_LEVEL 9
 
 #define BLOCK 4
+
+#ifdef PICO_BOARD
+#define SCREEN_WIDTH 124 / BLOCK
+#define SCREEN_HEIGHT 124 / BLOCK
+#else
 #define SCREEN_WIDTH 164 / BLOCK //41
 #define SCREEN_HEIGHT 124 / BLOCK //31
+#endif
+
 #define MAX_APPLE 8
 #define BONUS 250
 
